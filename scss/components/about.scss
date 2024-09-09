@@ -1,0 +1,26 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+
+
+
+.aboutTitle{
+    font-size: 4rem;
+}
+
+.aboutParagraphs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding:2rem;
+}
+
+.aboutParaTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

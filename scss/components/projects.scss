@@ -1,0 +1,31 @@
+.projects__Title{
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+.card {
+    height: 20rem;
+    background-color: #C4DAD2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 16px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    cursor: pointer;
+}
