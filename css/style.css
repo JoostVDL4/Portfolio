@@ -25,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 4rem;
   color: #fff;
   background-color: rgb(196, 218, 210);
 }
@@ -124,24 +124,101 @@ header {
   gap: 2rem;
   justify-content: space-between;
   padding: 2rem;
+  align-items: center;
 }
 
 .card {
-  height: 20rem;
+  display: flex;
+  height: auto;
   background-color: #C4DAD2;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 2rem;
   box-shadow: 0 16px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   text-decoration: none;
   color: black;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+  transition: box-shadow 0.3s ease;
+  width: 70%;
 }
 
-.card:hover {
+.cardTitle {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #000000;
+  height: 1px;
+}
+
+.cardImage {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.cardLanguages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cardButton {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
   cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10rem;
+  height: 5rem;
 }
 
+.cardDesc {
+  font-size: 2rem;
+}
+
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: 0.75rem 1.5rem;
+  }
+}
 .footer {
   margin-top: 30rem;
   background-color: white;
@@ -164,6 +241,7 @@ header {
   justify-content: center;
   flex-direction: row;
   padding: 2rem;
+  gap: 3rem;
 }
 
 .aboutParaTitle {

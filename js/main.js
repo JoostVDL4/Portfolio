@@ -24,3 +24,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const cardRect = card.getBoundingClientRect();
+        const xAxis = (e.clientX - cardRect.left) / cardRect.width - 0.5;
+        const yAxis = (e.clientY - cardRect.top) / cardRect.height - 0.5;
+
+ 
+        card.style.transform = `rotateY(${xAxis * 20}deg) rotateX(${yAxis * -20}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+
+        card.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        card.style.transition = 'transform 0.5s ease'; 
+    });
+
+    card.addEventListener('mouseenter', () => {
+        card.style.transition = 'none';  
+    });
+});
+
