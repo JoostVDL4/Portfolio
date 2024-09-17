@@ -5,14 +5,42 @@
     flex-direction: row;
     color:white;
     padding-left:3rem;
+    height:80vh;
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
+.introVisible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
 
 .introText{
     width:50%;
 }
 
+.introTitle{
+    font-size:8rem;
+}
+
+.introSubTitle{
+    font-size:4rem;
+}
+
+.introDesc{
+    font-size:3rem;
+}
+
 .introImage{
-    width:50%;
     display: flex;
     justify-content: center;
+    width:50%;
+}
+
+.introImg{
+    object-fit: cover;
+    width:auto;
+    height:30rem;
 }

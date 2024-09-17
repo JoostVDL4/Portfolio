@@ -26,26 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const cards = document.querySelectorAll('.card');
 
-cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const cardRect = card.getBoundingClientRect();
-        const xAxis = (e.clientX - cardRect.left) / cardRect.width - 0.5;
-        const yAxis = (e.clientY - cardRect.top) / cardRect.height - 0.5;
 
- 
-        card.style.transform = `rotateY(${xAxis * 20}deg) rotateX(${yAxis * -20}deg)`;
+document.addEventListener('DOMContentLoaded', function() {
+    const popupText = document.getElementById('popup-about');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('aboutVisible');
+        }
+      });
     });
+  
+    observer.observe(popupText);
+  });
 
-    card.addEventListener('mouseleave', () => {
-
-        card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-        card.style.transition = 'transform 0.5s ease'; 
-    });
-
-    card.addEventListener('mouseenter', () => {
-        card.style.transition = 'none';  
-    });
-});
-
+  document.addEventListener('DOMContentLoaded', function() {
+    const introSection = document.querySelector('.intro');
+  
+    introSection.classList.add('introVisible');
+  });

@@ -10,7 +10,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-content: space-between;
-    padding: 2rem;
     align-items: center;
     
 }
@@ -28,12 +27,15 @@
     color: black;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    margin: 1rem;
-    transition: box-shadow 0.3s ease;
-    width:70%;
+    gap: 1.5rem;
+    margin: 5rem;
+    transition: box-shadow 0.3s ease in ease-in-out;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
+}
 
 
 .cardTitle {
@@ -65,6 +67,12 @@ hr {
     gap: 3rem;
 }
 
+.cardLanguages > p{
+    border: 0.1rem solid #888;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem
+}
+
 .cardButton {
     background-color: #111827;
     border: 1px solid transparent;
@@ -90,6 +98,13 @@ hr {
     width: 10rem;
     height: 5rem;
 }
+
+.cardButtonText{
+    text-decoration: none;
+    color:white;
+}
+
+
 
 .cardDesc {
     font-size: 2rem;

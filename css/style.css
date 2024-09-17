@@ -14,6 +14,7 @@ html {
 
 body {
   font-size: 2rem;
+  width: 100%;
 }
 
 body {
@@ -100,16 +101,43 @@ header {
   flex-direction: row;
   color: white;
   padding-left: 3rem;
+  height: 80vh;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.introVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .introText {
   width: 50%;
 }
 
+.introTitle {
+  font-size: 8rem;
+}
+
+.introSubTitle {
+  font-size: 4rem;
+}
+
+.introDesc {
+  font-size: 3rem;
+}
+
 .introImage {
-  width: 50%;
   display: flex;
   justify-content: center;
+  width: 50%;
+}
+
+.introImg {
+  object-fit: cover;
+  width: auto;
+  height: 30rem;
 }
 
 .projects__Title {
@@ -123,7 +151,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-content: space-between;
-  padding: 2rem;
   align-items: center;
 }
 
@@ -140,10 +167,14 @@ header {
   color: black;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  margin: 1rem;
-  transition: box-shadow 0.3s ease;
-  width: 70%;
+  gap: 1.5rem;
+  margin: 5rem;
+  transition: box-shadow 0.3s ease in ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cardTitle {
@@ -174,6 +205,12 @@ hr {
   gap: 3rem;
 }
 
+.cardLanguages > p {
+  border: 0.1rem solid #888;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
 .cardButton {
   background-color: #111827;
   border: 1px solid transparent;
@@ -198,6 +235,11 @@ hr {
   touch-action: manipulation;
   width: 10rem;
   height: 5rem;
+}
+
+.cardButtonText {
+  text-decoration: none;
+  color: white;
 }
 
 .cardDesc {
@@ -230,6 +272,14 @@ hr {
   align-items: center;
   flex-direction: column;
   color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .aboutTitle {
