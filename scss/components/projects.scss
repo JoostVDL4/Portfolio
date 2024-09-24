@@ -17,7 +17,7 @@
 .card {
     display: flex;
     height: 80%;
-    background-color: #C4DAD2;
+    background-color: rgb(22, 66, 60); 
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 2rem;
@@ -40,7 +40,7 @@
 
 .cardTitle {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 3rem;
 }
 
@@ -49,7 +49,7 @@
     display: block;
     clear: both;
     width: 96%;
-    background-color: #000000;
+    background-color: #ffffff;
     height: 1px;
 }
 
@@ -71,7 +71,8 @@
 .cardLanguages > p{
     border: 0.1rem solid #888;
     padding: 0.4rem 0.8rem;
-    border-radius: 0.4rem
+    border-radius: 0.4rem;
+    color: rgb(255, 255, 255);
 }
 
 .cardButton {
@@ -109,6 +110,7 @@
 
 .cardDesc {
     font-size: 2rem;
+    color: rgb(255, 255, 255);
 }
 
 .button-40:hover {
