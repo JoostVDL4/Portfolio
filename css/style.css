@@ -183,10 +183,9 @@ header {
   font-size: 3rem;
 }
 
-hr {
-  border: 0;
-  clear: both;
+.card hr {
   display: block;
+  clear: both;
   width: 96%;
   background-color: #000000;
   height: 1px;
@@ -262,8 +261,42 @@ hr {
   }
 }
 .footer {
-  margin-top: 30rem;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  background-color: rgb(22, 66, 60);
+  padding: 2rem;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.footerTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(106, 156, 137);
+}
+
+.footerItems {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.footerItems > a {
+  text-decoration: none;
+  color: rgb(135, 135, 133);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footerItems > a:hover {
+  color: rgb(106, 156, 137);
 }
 
 .about {
@@ -300,6 +333,17 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tag-cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 2.5rem;
+  background-color: #C4DAD2;
+  margin-top: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

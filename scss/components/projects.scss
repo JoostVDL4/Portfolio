@@ -44,14 +44,15 @@
     font-size: 3rem;
 }
 
-hr {
-    border: 0;
-    clear: both;
+
+.card hr {
     display: block;
+    clear: both;
     width: 96%;
     background-color: #000000;
     height: 1px;
 }
+
 
 .cardImage {
     width: 50%;
