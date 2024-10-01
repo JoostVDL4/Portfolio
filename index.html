@@ -17,19 +17,19 @@
     <header>
         <div class="logo">Portfolio</div>
         <nav class="nav__Items">
-            <a href="#">Home</a>
-            <a href="#popup-about" id="">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#intro">Home</a>
+            <a href="#popup-about" id="">Over</a>
+            <a href="#projects">Projecten</a>
             <a href="#footer">Contact</a>
         </nav>
     </header>
 
 
-    <section class="intro">
+    <section id="intro" class="intro">
         <div class="introText">
             <h1 class="introTitle">Joost van der Laan</h1>
-            <h2 class="introSubTitle">Web-end Developer in opleiding</h2>
-            <p class="introDesc">Ambitieuze Web-Developer met een oog voor strak ontworpen, responsive websites</p>
+            <h2 class="introSubTitle">Full-Stack Developer</h2>
+            <p class="introDesc">Ambitieuze Developer met een oog voor strak ontworpen, responsive websites!</p>
         </div>
 
         <div class="introImage">
@@ -42,13 +42,23 @@
         <h1 class="aboutTitle">Over Mij</h1>
 
         <div class="aboutParagraphs">
+
             <div>
                 <h2 class="aboutParaTitle">Skills</h2>
-                <p class="aboutText">In de afgelopen 2 jaar heb ik een breed scala aan programmeer talen geleerd. Deze
-                    houden zich vooral bezig met
-                    de web kant, zoals HTML, CSS, SCSS, JS en REACT en backend talen zoals PHP, SQL. Naast de web kant
-                    heb ik ook ervaring met arduinos.
-                    De vaardigheid om omgevingen op te zetten in Docker zoals Wordpress heb ik ook ervaring mee.
+                <p class="aboutText">In de afgelopen twee jaar heb ik een breed scala aan programmeertalen geleerd, met
+                    een focus op webtechnologieën zoals HTML, CSS, SCSS, JavaScript en React, evenals back-end talen
+                    zoals PHP en SQL. Daarnaast heb ik ook ervaring opgedaan met Arduino en Docker.
+                </p>
+
+            </div>
+            <div>
+                <h2 class="aboutParaTitle">Wie?</h2>
+                <p class="aboutText">Mijn naam is Joost van der Laan, 20 jaar, en ik zit in het 3e jaar van het
+                    Mediacollege. Ik volg de
+                    opleiding tot Software developer. Mijn hobby's zijn gamen, films kijken en programmeren. Ik vind
+                    het leuk om iets te creeren.
+                    Tijdens mijn stage hoop ik wat ik geleerd
+                    heb op school in de praktijk toe te kunnen passen.
                 </p>
                 <!--
                  <span class="tag-cloud">HTML</span>
@@ -56,34 +66,25 @@
                 <span class="tag-cloud">SCSS</span>
                 <span class="tag-cloud">JS</span>
                 -->
-               
-            </div>
-            <div>
-                <h2 class="aboutParaTitle">Wie?</h2>
-                <p class="aboutText">Mijn naam is Joost van der Laan, 20 jaar, en ik zit in het 3e jaar van het
-                    Mediacollege. Ik volg de
-                    opleiding tot Front-end developer. Mijn hobby's zijn gamen, films kijken en programmeren. Ik vind
-                    het leuk om iets te creeren.
-                    Tijdens mijn stage hoop ik wat ik geleerd
-                    heb op school in de praktijk toe te kunnen passen
-                </p>
 
             </div>
+
         </div>
 
 
     </section>
 
-    <h1 class="projects__Title">Projects</h1>
+    <h1 class="projects__Title">Projecten</h1>
     <section id="projects" class="projects">
+
         <div class="card">
             <img src="img/socialScreenshot.png" alt="" class="cardImage">
-            <h1 class="cardTitle">Infinite scroll</h1>
+            <h1 class="cardTitle">Social Media Clone</h1>
             <hr>
-            <p class="cardDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque officiis
-                unde ducimus
-                praesentium quam ratione quisquam voluptate suscipit eum corrupti, consequatur neque quidem pariatur
-                doloribus adipisci nesciunt necessitatibus laboriosam.</p>
+            <p class="cardDesc">Project dat het gevoel van een social media platform nabootst. Via middel van de
+                introsection observer kan je oneindig lang doorscrollen net zoals op een platform zoals Twitter.
+                Foto's van "gebruikers" zijn gegenereerd door middel van AI.
+            </p>
             <div class="cardLanguages">
                 <p>HTML</p>
                 <p>CSS</p>
@@ -95,13 +96,30 @@
         </div>
 
         <div class="card">
+            <img src="img/blackjack.png" alt="" class="cardImage">
+            <h1 class="cardTitle">Blackjack</h1>
+            <hr>
+            <p class="cardDesc">Gemaakt in mijn vrije tijd. Gebruikt grotendeels alleen maar Javascript.</p>
+            <div class="cardLanguages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+            </div>
+            <button class="cardButton" role="button"> <a class="cardButtonText"
+                    href="https://35542.hosts2.ma-cloud.nl/Whack-a-mole/">Click here!</a></button>
+
+
+
+        </div>
+
+
+        <div class="card">
             <img src="img/colorScreenshot.png" alt="" class="cardImage">
             <h1 class="cardTitle">Color Picker</h1>
             <hr>
-            <p class="cardDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque officiis
-                unde ducimus
-                praesentium quam ratione quisquam voluptate suscipit eum corrupti, consequatur neque quidem pariatur
-                doloribus adipisci nesciunt necessitatibus laboriosam.</p>
+            <p class="cardDesc">Dit project gegenereerd kleuren met hsl codes, zodra je erop klikt dan wordt een HSL code gekopieerd
+                op je klembord en dan kan je deze gebruiken in bijvoorbeeld je eigen projecten!
+            </p>
             <div class="cardLanguages">
                 <p>HTML</p>
                 <p>CSS</p>
@@ -115,13 +133,10 @@
             <img src="img/cssArtScreen.png" alt="" class="cardImage">
             <h1 class="cardTitle">Spinning Diamond</h1>
             <hr>
-            <p class="cardDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero excepturi quas fugiat
-                nesciunt harum consequuntur modi, architecto mollitia. Vero excepturi vitae blanditiis doloremque
-                dignissimos magni ea quas quasi sunt aut?</p>
+            <p class="cardDesc">Dit project is gemaakt om te laten zien hoeveel je kan met alleen maar CSS. Hier zit geen javascript in!</p>
             <div class="cardLanguages">
                 <p>HTML</p>
                 <p>CSS</p>
-                <p>JS</p>
             </div>
             <button class="cardButton" role="button"> <a class="cardButtonText"
                     href="https://35542.hosts2.ma-cloud.nl/Whack-a-mole/">Click here!</a></button>
@@ -134,12 +149,11 @@
             <img src="img/whackamole.png" alt="" class="cardImage">
             <h1 class="cardTitle">Whack-a-Mole</h1>
             <hr>
-            <p class="cardDesc">Onderdeel van opdracht om een site voor het Nationaal Videogame Museum te maken. Dit is
-                gemaakt via createJS</p>
+            <p class="cardDesc">Mini-game dat onderdeel uit maakte van een grotere site. Dit heb ik gemaakt via CreateJS!</p>
             <div class="cardLanguages">
                 <p>HTML</p>
                 <p>CSS</p>
-                <p>JS</p>
+                <p>CreateJS</p>
             </div>
             <button class="cardButton" role="button"> <a class="cardButtonText"
                     href="https://35542.hosts2.ma-cloud.nl/Whack-a-mole/">Click here!</a></button>
@@ -147,6 +161,11 @@
 
 
         </div>
+
+      
+
+
+        
     </section>
 
 
@@ -159,11 +178,10 @@
         <div>
             <nav class="footerItems">
                 <a href="#">EMAIL</a>
-                <a href="#">GITHUB</a>
-                <a href="#">WHATSAPP</a>
+                <a href="https://github.com/JoostVDL4">GITHUB</a>
             </nav>
         </div>
-  
+
     </footer>
 
 
