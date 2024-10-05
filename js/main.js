@@ -47,3 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
   
     introSection.classList.add('introVisible');
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.card');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('cardVisible');
+            }
+        });
+    }, { threshold: 0.2 }); // Trigger when 20% of the card is visible
+
+    projectCards.forEach(card => observer.observe(card));
+});
