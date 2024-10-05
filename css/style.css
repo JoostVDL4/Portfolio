@@ -232,6 +232,13 @@ header {
   font-size: 3rem;
 }
 
+.cardLanguagesTitle {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
 .card hr {
   display: block;
   clear: both;
@@ -260,14 +267,20 @@ header {
   color: rgb(255, 255, 255);
 }
 
+.fa-brands {
+  color: white;
+}
+
 .cardButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #111827;
   border: 1px solid transparent;
   border-radius: 0.75rem;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  flex: 0 0 auto;
   font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 600;
@@ -284,6 +297,7 @@ header {
   touch-action: manipulation;
   width: 10rem;
   height: 5rem;
+  margin: 0 auto;
 }
 
 .cardButtonText {
