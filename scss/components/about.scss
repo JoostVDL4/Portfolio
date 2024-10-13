@@ -1,18 +1,32 @@
 .about {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
     color: white;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    width: 100%;
-    max-width: 1200px; 
-    padding: 2rem 1rem;
-    margin: 0 auto;
-    box-sizing: border-box;
+    padding: 3rem;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+    
+    .aboutParagraphs {
+        width: 100%; /* Make sure it uses full width */
+        padding: 0 2rem; /* Add some padding */
+    }
+
+    .aboutParagraphs > div {
+        margin-bottom: 2rem; /* Space between sections */
+    }
+}
+
 
 
 .aboutVisible {

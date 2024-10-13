@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
 
     var modal = document.getElementById("about-modal");
 
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+*/
 
 
 

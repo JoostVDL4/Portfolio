@@ -8,13 +8,26 @@ header {
 
 }
 
-.nav__Items a {
-    color: white;
+.nav__Items > a {
     text-decoration: none;
-    padding: 3rem;
+    color: rgb(135, 135, 133);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 1.3s ease;
+    padding:3rem;
+    font-size:2.2rem;
+}
+
+.nav__Items > a:hover {
+    text-decoration: none;
+    color: rgb(106, 156, 137); ;
+    font-size:3rem;
+    font-weight: bold;
+    transition: all 1.3s ease;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
+    color: rgb(135, 135, 133);
 }
