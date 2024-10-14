@@ -9,7 +9,7 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-    background: linear-gradient(180deg, rgba(22, 66, 60, 0.9) 0%, rgba(106, 156, 137, 0.9) 98%); 
+   
     box-sizing: border-box;
 }
 
@@ -76,6 +76,7 @@
         text-align: center;
         height: 100vh;
         padding: 2rem;
+        width:100vw;
     }
 
     .introText, .introImage {

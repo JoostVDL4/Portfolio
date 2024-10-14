@@ -31,3 +31,13 @@ header {
     font-weight: bold;
     color: rgb(135, 135, 133);
 }
+
+@media (max-width: 800px) {
+    
+    .nav__Items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2rem;
+    }
+}
