@@ -1,7 +1,7 @@
 .about {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the start */
+    align-items: flex-start; 
     color: white;
     opacity: 0;
     transform: translateY(50px);
@@ -9,21 +9,21 @@
     padding: 3rem;
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
     .about {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        text-align: center; /* Center text */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
     .aboutParagraphs {
-        width: 100%; /* Make sure it uses full width */
-        padding: 0 2rem; /* Add some padding */
+        width: 100%;
+        padding: 0 2rem; 
     }
 
     .aboutParagraphs > div {
-        margin-bottom: 2rem; /* Space between sections */
+        margin-bottom: 2rem;
     }
 }
 
@@ -86,7 +86,7 @@
 
 
 .aboutText {
-    font-size: 1.9rem;
+    font-size:2.2rem;
     line-height: 1.6;
     text-align: justify;
     color: white;

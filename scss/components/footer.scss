@@ -1,42 +1,50 @@
-
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
-    background-color: rgb(22, 66, 60); 
+    background-color: rgb(22, 66, 60);
     padding: 2rem;
-    color: #ffffff; 
+    color: #ffffff;
     text-align: center;
     width: 100%;
 }
 
 .footerTitle {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(106, 156, 137); 
+    color: rgb(106, 156, 137);
 }
 
 
 .footerItems {
     display: flex;
     justify-content: space-between;
-    gap: 3rem; 
+    gap: 5rem;
+    padding-top: 2rem;
 }
 
 
-.footerItems > a {
+.footerItems>a {
     text-decoration: none;
     color: rgb(135, 135, 133);
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 
-.footerItems > a:hover {
-    color: rgb(106, 156, 137); 
+.footerItems>a:hover {
+    color: rgb(106, 156, 137);
+}
+
+
+@media (max-width: 1024px) {
+
+    .footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
 }
