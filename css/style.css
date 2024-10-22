@@ -313,7 +313,7 @@ header {
 
 .cardImage {
   width: 50%;
-  height: 50%;
+  max-height: 50%;
   object-fit: contain;
 }
 
@@ -340,7 +340,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111827;
+  background-color: rgb(135, 135, 133);
   border: 1px solid transparent;
   border-radius: 0.75rem;
   box-sizing: border-box;
@@ -364,6 +364,7 @@ header {
   height: 5rem;
   margin: 0 auto;
   margin-top: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .cardButtonText {
@@ -516,6 +517,10 @@ header {
 }
 
 .aboutText {
+  display: flex;
+  flex-wrap: wrap; /* Allows tags to wrap to the next line */
+  justify-content: center; /* Centers the tags horizontally */
+  gap: 1rem; /* Space between tags */
   font-size: 2.2rem;
   line-height: 1.6;
   text-align: justify;
@@ -525,7 +530,6 @@ header {
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .tag-cloud {
@@ -537,6 +541,7 @@ header {
   margin-top: 0.8rem;
   font-size: 2rem;
   transition: background-color 0.3s ease;
+  white-space: nowrap; /* Ensures tags stay on one line */
 }
 
 .tag-cloud:hover {

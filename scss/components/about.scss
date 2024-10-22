@@ -86,7 +86,11 @@
 
 
 .aboutText {
-    font-size:2.2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to wrap to the next line */
+    justify-content: center; /* Centers the tags horizontally */
+    gap: 1rem; /* Space between tags */
+    font-size: 2.2rem;
     line-height: 1.6;
     text-align: justify;
     color: white;
@@ -95,7 +99,6 @@
     border-radius: 8px;
     width: 100%; 
     box-sizing: border-box; 
-    overflow: hidden; 
 }
 
 .tag-cloud {
@@ -107,6 +110,7 @@
     margin-top: 0.8rem;
     font-size: 2rem;
     transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensures tags stay on one line */
 }
 
 .tag-cloud:hover {
