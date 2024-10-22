@@ -9,7 +9,6 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-   
     box-sizing: border-box;
 }
 
@@ -51,6 +50,36 @@
     margin-bottom: 2rem;
     color: white;
 }
+
+.introButton {
+    position: relative;
+    font-family: "Josefin Sans", sans-serif;
+    top: 50%;
+    background-color: rgb(106, 156, 137);  
+    color: white;
+    border: none;
+    border-radius: 2rem; 
+    padding: 1.5rem;
+    height: 8rem;
+    width: 12rem; 
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.introButton:hover {
+    background-color: rgb(85, 126, 112); 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.introButton:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 
 .introImage {
