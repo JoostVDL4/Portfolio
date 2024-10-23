@@ -108,6 +108,18 @@
         width:100vw;
     }
 
+    .introButton{
+        position: relative;
+        background-color: rgb(106, 156, 137);  
+        color: white;     
+        margin:1rem; 
+        padding: 1.5rem;
+        height: 12rem;
+        width: 12rem; 
+        font-size: 2rem;
+        
+    }
+
     .introText, .introImage {
         width: 100%;
         padding: 0;
@@ -117,6 +129,7 @@
         max-width: 90%;
         max-height: 40vh;
         margin-bottom: 2rem;
+        margin-left:8rem;
     }
 
     .introTitle {

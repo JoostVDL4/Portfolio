@@ -220,6 +220,16 @@ header {
     padding: 2rem;
     width: 100vw;
   }
+  .introButton {
+    position: relative;
+    background-color: rgb(106, 156, 137);
+    color: white;
+    margin: 1rem;
+    padding: 1.5rem;
+    height: 12rem;
+    width: 12rem;
+    font-size: 2rem;
+  }
   .introText, .introImage {
     width: 100%;
     padding: 0;
@@ -228,6 +238,7 @@ header {
     max-width: 90%;
     max-height: 40vh;
     margin-bottom: 2rem;
+    margin-left: 8rem;
   }
   .introTitle {
     font-size: 6rem;
@@ -395,7 +406,12 @@ header {
 @media (max-width: 1024px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    width: 100vw;
+  }
+}
+@media (min-width: 2000px) {
+  .card {
+    height: 120rem;
   }
 }
 .footer {
@@ -440,6 +456,7 @@ header {
   .footer {
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100vw;
   }
 }
 .about {
