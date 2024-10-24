@@ -10,7 +10,7 @@ header {
 
 .nav__Items > a {
     text-decoration: none;
-    color: rgb(135, 135, 133);
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
     transition: all 1.3s ease;
@@ -29,15 +29,30 @@ header {
 .logo {
     font-size: 2.5em;
     font-weight: bold;
-    color: rgb(135, 135, 133);
+    color: white;
 }
 
 @media (max-width: 800px) {
-    
-    .nav__Items{
-        display: flex;
+
+    header {
         flex-direction: column;
         justify-content: center;
-        gap:2rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .nav__Items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__Items > a {
+        padding:1.4rem;
+        font-size:2rem;
     }
 }
